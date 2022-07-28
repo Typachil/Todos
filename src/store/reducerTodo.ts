@@ -1,11 +1,12 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import visible from "./enumVisible";
 
 export type Todo = {
     id: string;
     title: string;
     completed: boolean;
 }
+
+export enum visible { All, Active, Completed };
 
 type State = {
     list: Todo[],
@@ -45,4 +46,5 @@ const todoSlice = createSlice({
 })
 
 export const {addTodo, toggleComplete, removeTodos, changeVisible} = todoSlice.actions;
+
 export default todoSlice.reducer;
