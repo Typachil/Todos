@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Museo';
+    src: url(/public/fonts/MuseoSansDisplay-Light.eot);
+    src: url(/public/fonts/MuseoSansDisplay-Light.woff) format('woff'), 
+    url(/public/fonts/MuseoSansDisplay-Light.ttf) format('truetype');
+}
+
+body{
+    background-color: #F9F7FA;
+}
+
+.todos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1{
+        font-family: 'Museo', Tahoma, Geneva, Verdana, sans-serif;
+        color: #D0C9D0;
+        font-size: 8vmax;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+}
