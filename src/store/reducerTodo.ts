@@ -6,11 +6,15 @@ export type Todo = {
     completed: boolean;
 }
 
-export enum visible { All, Active, Completed };
+export const visible = { 
+    All : "All", 
+    Active: "Active", 
+    Completed: "Completed"
+};
 
 type State = {
     list: Todo[],
-    visibleTodos: visible
+    visibleTodos: string
 }
 
 const initialState: State = {
@@ -39,7 +43,7 @@ const todoSlice = createSlice({
         removeTodos(state){
             state.list = state.list.filter(todo => todo.completed === false);
         },
-        changeVisible(state,action: PayloadAction<visible>){
+        changeVisible(state,action: PayloadAction<string>){
             state.visibleTodos = action.payload;
         }
     }
