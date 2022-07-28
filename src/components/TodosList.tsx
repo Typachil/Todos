@@ -1,7 +1,8 @@
 import { List } from '@mui/material';
 import React, { useMemo } from 'react';
 import { useAppSelector } from '../hooks/redux';
-import { Todo, visible } from '../store/reducerTodo';
+import visible from '../store/enumVisible';
+import { Todo } from '../store/reducerTodo';
 import TodoItem from './TodoItem';
 
 const TodosList = () => {

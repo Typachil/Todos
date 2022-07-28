@@ -3,8 +3,9 @@ import React, { useMemo, useState } from 'react';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import './todos.scss';
 import { useAppDispatch, useAppSelector } from '../hooks/redux';
-import { addTodo, changeVisible, removeTodos, Todo, visible } from '../store/reducerTodo';
+import { addTodo, changeVisible, removeTodos, Todo } from '../store/reducerTodo';
 import TodosList from './TodosList';
+import visible from '../store/enumVisible';
 
 
 const TodosForm = () => {
