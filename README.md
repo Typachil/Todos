@@ -1,6 +1,8 @@
 # Todos
 
-Приложение создано с использованием TypeScript, Webpack, Sass, React, Redux и React Hooks
+Приложение создано с использованием TypeScript, Webpack, Sass, React, Redux и React Hooks.
+
+Библиотека компонентов: Material UI
 
 Установка и запуск проекта: "npm i && npm run start"
 
